@@ -1,0 +1,33 @@
+
+$dark-color: #484349;
+$soft-pink: #F7F0F0;
+$turqoise: #8AF3FF;
+$green: #18A999;
+$moss: #109648;
+
+$dark-grey: #383838;
+$mid-grey: #909090;
+$light-grey:#DCDCDC;
+
+
+@import './components/tabs/_tabs.scss';
+@import './components/infoContainer/_infoContainer.scss';
+
+.app-container {
+    background: $light-grey;
+    background: -webkit-linear-gradient(to bottom right, $light-grey,$mid-grey);
+    background: linear-gradient(to bottom right, $light-grey,$mid-grey);
+    display: grid;
+    grid-template-rows: 1fr auto;
+    place-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.main-container {
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 150px 1fr 3fr ;
+    padding: 30px;
+}

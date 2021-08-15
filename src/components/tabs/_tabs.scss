@@ -1,0 +1,51 @@
+.tab-bar {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.tab-button {
+    height: 5rem;
+    width: 5rem;
+    display: grid;
+    grid-template-rows: 2rem auto;
+    place-content: center;
+    cursor: pointer;
+}
+
+.tab-button.show {
+    background: #bef;
+}
+
+.tab-button.hidden {
+    background: #beb;
+}
+
+.tab-button:hover {
+    background: $light-grey
+}
+
+.tab {
+    // height: 80vh;
+    // width: 80vw;
+    background: $light-grey;
+    height: 100%;
+}
+
+.tab.hidden {
+    display: none;
+}
+
+img.tab-icon {
+    height: 2rem;
+    width: 2rem;
+    margin: auto;
+    
+}
+
+.tab-title {
+    color: #000;
+}
+.tab-container {
+    padding: 10px 0px 10px  0px;
+}

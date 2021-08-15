@@ -1,0 +1,17 @@
+.info-container {
+    background: $turqoise;
+    width: 25vw;
+
+    display: grid;
+    grid-template-rows: auto auto;
+    place-content: center;
+    
+    .profile-pic {
+        margin: 20px;
+        height: 100px;
+        width: 100px;
+        border-radius: 50px;
+        border: 2px solid $green;
+    }
+
+}

@@ -1,26 +1,41 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { Tab, TabBar, TabContainer } from './components/tabs';
+import { InfoContainer } from './components/infocontainer/InfoContainer';
+import { Copyright } from './components/Copyright';
+
+import './app.scss';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [tab, setTab] = useState<number>(0);
+
+    const tabContents = [
+        { title: 'About', icon: '/user.svg' },
+        { title: 'Resume', icon: '/document.svg' },
+        { title: 'Contact', icon: '/email.svg' },
+    ]
+
+    return (
+        <div className="app-container">
+            <div className='main-container'>
+                <TabBar tab={tab} setTab={setTab} tabContents={tabContents} />
+                <InfoContainer />
+
+                <TabContainer>
+                    <Tab value={tab} index={0}>
+                        About
+                    </Tab>
+                    <Tab value={tab} index={1}>
+                        Resume
+                    </Tab>
+                    <Tab value={tab} index={2}>
+                        Contact
+                    </Tab>
+                </TabContainer>
+        
+            </div>
+            <Copyright />
+        </div>
+    );
 }
 
 export default App;
