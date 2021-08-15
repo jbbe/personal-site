@@ -1,0 +1,22 @@
+.resume-entry {
+
+    .dates {
+        border: 1px solid $blue;
+        border-radius: 3px;
+        width: fit-content;
+        padding: 1px;
+        font-size: smaller;
+    }
+    h3, h5, h6 {
+        line-height: 0px;
+    }
+}
+
+.resume-title {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    img {
+        height: 3rem;
+        padding-right: 5px;
+    }
+}

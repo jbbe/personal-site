@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 import { TabTitle } from '../tabs/TabTitle'
-import { WorkEntry } from './WorkEntry';
+import { ResumeEntry } from './ResumeEntry';
 
 interface Props {
     
@@ -10,11 +10,22 @@ export const Resume = (props: Props) => {
     return (
         <Fragment>
             <TabTitle title="Resumé" />
-
-            <h4>Education</h4>
-
-            <h4>Work Experience</h4>
-            <WorkEntry company={"Th3rdcoast Digital Solutions"} 
+            <div className='resume-title'>
+                <img src={'graduation-hat.svg'} alt='' />
+                <h3>Education</h3>
+            </div>
+            <ResumeEntry 
+                company={"University of Michigan"} 
+                title="B.S. in Computer Science"
+                location="Ann Arbor, MI" 
+                dates="September 2015 - May 2020"
+                bulletPoints={[]}
+            />
+            <div className='resume-title'>
+                <img src={'suitcase.svg'} alt='' />
+                <h3>Work Experience</h3>
+            </div>
+            <ResumeEntry company={"Th3rdcoast Digital Solutions"} 
                 title="Developer"
                 location="Grand Haven, MI"
                 dates="June 2020 - Present"
@@ -25,7 +36,7 @@ export const Resume = (props: Props) => {
                 "Set up and managed CI/CD for multiple projects using the Azure ecosystem."
                 ]}
             />
-            <WorkEntry company={"University of Michigan, CAEN"} 
+            <ResumeEntry company={"University of Michigan, CAEN"} 
                 title="Help Desk Consultant & Student Manager"
                 location="Ann Arbor, MI"
                 dates="July 2018 - April 2020"

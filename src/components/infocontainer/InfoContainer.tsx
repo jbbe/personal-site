@@ -1,15 +1,13 @@
 import React from 'react'
+import { TypingText } from '../typingtext/TypingText'
 
-interface Props {
-    
-}
-
-export const InfoContainer = (props: Props) => {
+export const InfoContainer = () => {
     return (
         <div className='info-container'>
             <img className='profile-pic' src='/Josh.jpg' alt='' />
 
-            <h6>Full Stack Developer</h6>
+            <TypingText texts={["Full Stack Developer", "Three.js Developer", "React.js Developer", "C# Developer"]} 
+                interval={400} />
 
             <h2>Josh Bell</h2>
             

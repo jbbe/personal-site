@@ -13,7 +13,9 @@ export const TabBar = (props: Props) => {
     return (
         <div className='tab-bar'>
             {tabContents.map((t: TabContent, idx: number) => {
-                return <div className={`tab-button ${tab === idx ? 'show' : 'hidden'}`} onClick={() => setTab(idx)}>
+                return <div className={`tab-button ${tab === idx ? 'show' : 'hidden'}`} 
+                    onClick={() => setTab(idx)}
+                    key={t.title}>
                     <img className='tab-icon' src={t.icon} alt='' />
                     {t.title}
                 </div>
