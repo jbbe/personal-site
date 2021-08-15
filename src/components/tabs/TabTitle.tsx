@@ -2,7 +2,7 @@ import React from 'react'
 
 interface Props {
     title: string;
-    icon: string;
+    // icon: string;
 }
 
 export const TabTitle = (props: Props) => {

@@ -9,9 +9,10 @@ export const InfoContainer = (props: Props) => {
         <div className='info-container'>
             <img className='profile-pic' src='/Josh.jpg' alt='' />
 
-            Full Stack Developer
+            <h6>Full Stack Developer</h6>
 
-            Josh Bell
+            <h2>Josh Bell</h2>
+            
         </div>
     )
 }
