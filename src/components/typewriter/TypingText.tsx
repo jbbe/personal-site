@@ -8,7 +8,7 @@ interface Props {
 
 const SpinInterval = 10;
 
-export const TypingText = (props: Props) => {
+export const Typewriter = (props: Props) => {
     const { texts, interval } = props;
     const [textIdx, setTextIdx] = useState(0);
     const [charIdx, setCharIdx] = useState(0);
@@ -30,7 +30,7 @@ export const TypingText = (props: Props) => {
     // console.log(texts, texts[textIdx], texts.length, textIdx, charIdx, spinTime)
     return (
         <div className='typewriter'>
-            <h5>{texts[textIdx].substr(0, charIdx)}</h5>
+            <h5>{texts[textIdx].substr(0, charIdx) || ' '}</h5>
         </div>
     )
 }
