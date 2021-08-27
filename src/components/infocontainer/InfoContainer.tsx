@@ -2,12 +2,16 @@ import React from 'react'
 import { Typewriter } from '../typewriter/TypingText'
 
 export const InfoContainer = () => {
+
+    const roles = ["Software Engineer", "Full-Stack Developer", 
+        "Three.js Developer", "React.js Developer", "C# Developer"];
+
     return (
         <div className='info-container'>
             <img className='profile-pic' src='/Josh.jpg' alt='' />
 
             <Typewriter 
-                texts={["Full Stack Developer", "Three.js Developer", "React.js Developer", "C# Developer"]} 
+                texts={roles} 
                 interval={300} />
 
             <h2>Josh Bell</h2>

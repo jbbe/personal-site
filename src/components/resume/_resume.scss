@@ -20,3 +20,18 @@
         padding-right: 5px;
     }
 }
+.techIconContainer {
+    padding: 0px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    place-content: center;
+}
+
+img.techIcon {
+    height: 70px;
+    // max-width: 50px;
+    margin: 5px 20px;
+    background: $light-grey;
+    justify-self: center;
+}

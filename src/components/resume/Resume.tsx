@@ -1,15 +1,35 @@
 import React, { Fragment } from 'react'
-import { TabTitle } from '../tabs/TabTitle'
+// import { TabTitle } from '../tabs/TabTitle'
 import { ResumeEntry } from './ResumeEntry';
 
-interface Props {
-    
-}
 
-export const Resume = (props: Props) => {
+const TechIcons = [
+        { name: 'Typescript', icon: "typescript.png"},
+        { name: 'React', icon: "react.png"},
+        { name: 'oCaml', icon: 'ocaml.jpg' },
+
+        { name: 'node.js', icon: "nodejs.png"}, 
+        { name: 'C#', icon: "csharp.jpg"}, 
+        { name: 'Azure DevOps', icon: "azure.png"}, 
+
+        { name: '', icon: ''},
+        { name: 'three.js', icon: "threejs.jpg"}, 
+    ];
+
+export const Resume = () => {
     return (
         <Fragment>
-            <TabTitle title="Resumé" />
+            {/* <TabTitle title="Resumé" /> */}
+            <div className='resume-title'>
+                {/* <img src={'skills.svg'} alt='' /> */}
+                <h3>Skills</h3>
+            </div>
+            <div className='techIconContainer'>
+                {TechIcons.map((t) =>
+                    <img className='techIcon' alt={t.name}
+                        src={t.icon} key={t.name} title={t.name} />)
+                }
+            </div>
             <div className='resume-title'>
                 <img src={'graduation-hat.svg'} alt='' />
                 <h3>Education</h3>
