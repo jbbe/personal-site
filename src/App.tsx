@@ -6,7 +6,7 @@ import { Copyright } from './components/Copyright';
 import './app.scss';
 import { About } from './components/About';
 import { Resume } from './components/resume/Resume';
-import { Contact } from './components/Contact';
+import { Contact } from './components/contact/Contact';
 
 function App() {
     const [tab, setTab] = useState<number>(0);

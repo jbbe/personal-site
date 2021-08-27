@@ -8,10 +8,15 @@ export const InfoContainer = () => {
 
             <Typewriter 
                 texts={["Full Stack Developer", "Three.js Developer", "React.js Developer", "C# Developer"]} 
-                interval={400} />
+                interval={300} />
 
             <h2>Josh Bell</h2>
-            
+            <div className='linkContainer'>
+                <img className='icon' src='github.png' alt='Github' />
+                <a href='https://github.com/jbbe' >
+                    <p>github.com/jbbe</p>
+                </a>
+            </div>
         </div>
     )
 }
