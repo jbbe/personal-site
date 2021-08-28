@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react'
+import React, { ReactNode, useEffect, useState } from 'react'
 
 interface Props {
     value: number;
@@ -8,11 +8,27 @@ interface Props {
 
 export const Tab = (props: Props) => {
     const{ value, index, children } = props;
-    return (
-        <div className={`tab ${value === index ? '' : 'hidden'}`}>
-            <div className='inner-tab-container'>
+    const [css, setCss] = useState(value === index ? '' : 'hidden');
 
-            {children}
+    useEffect(() => {
+        if(css === 'hidden') {
+            if(value === index) {
+                setCss('');
+            }
+        } else {
+            if(value !== index) {
+                setCss('slideout');
+                setTimeout(() => {
+                    setCss('hidden');
+                }, 1000);
+            }
+        }
+    }, [value, index, css])
+
+    return (
+        <div className={`tab ${css}`}>
+            <div className='inner-tab-container'>
+                {children}
             </div>
         </div>
     )

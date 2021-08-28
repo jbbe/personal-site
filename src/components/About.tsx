@@ -9,8 +9,9 @@ export const About = (props: Props) => {
     return (
         <Fragment>
             <TabTitle title="About Me" />
-            <p>I am a full stack software engineer with experience designing, and implementing software solutions across
-                the software stack.
+            <p>I am a full stack software engineer with a passion for solving intersting problems
+                by designing and implementing software solutions across
+                software stacks.
             </p>
             <p>Age ... 24</p>
             <p>Residence ... Michigan</p>

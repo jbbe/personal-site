@@ -35,6 +35,7 @@
     // width: 80vw;
     background: $light-grey;
     height: 80vh;
+    z-index: 1;
 }
 
 .tab.hidden {
@@ -52,10 +53,32 @@ img.tab-icon {
 }
 .tab-container {
     padding: 10px 0px 10px  0px;
+    position: relative;
+    overflow: hidden;
 }
 .inner-tab-container {
     padding: 20px;
     height: 70vh;
     overflow: auto;
 
+}
+
+.tab.slideout {
+    animation-duration: 1s;
+    animation-name: slideout;
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+}
+
+@keyframes slideout {
+    from {
+        margin-top: 0;
+        opacity: 1;
+    }
+
+    to {
+        margin-top: 130vh;
+        opacity: 0
+    }
 }
