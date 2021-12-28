@@ -5,10 +5,12 @@ export const InfoContainer = () => {
 
     const roles = ["Software Engineer", "Full-Stack Developer", 
         "Three.js Developer", "React.js Developer", "C# Developer"];
-
+        
     return (
         <div className='info-container'>
-            <img className='profile-pic' src='/Josh.jpg' alt='' />
+            <div className='profile-pic-container'>
+                <img className='profile-pic' src='headshot.png' alt='' />
+            </div>
 
             <Typewriter 
                 texts={roles} 

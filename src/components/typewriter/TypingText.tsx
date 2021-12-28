@@ -28,9 +28,9 @@ export const Typewriter = (props: Props) => {
     }, interval)
 
     // console.log(texts, texts[textIdx], texts.length, textIdx, charIdx, spinTime)
-    return (
+    return <div className='typewriter-container'>
         <div className='typewriter'>
             <h5>{texts[textIdx].substr(0, charIdx) || ' '}</h5>
         </div>
-    )
+        </div>;
 }
