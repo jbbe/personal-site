@@ -1,21 +1,17 @@
 import React, { Fragment } from 'react'
-import { TabTitle } from './tabs/TabTitle'
+import { TabTitle } from './tabs/TabTitle';
+import { Email } from '../Constants';
 
-interface Props {
-    
-}
-
-export const About = (props: Props) => {
+export const About = () => {
     return (
         <Fragment>
             <TabTitle title="About Me" />
-            <p>I am a full stack software engineer with a passion for solving intersting problems
-                by designing and implementing software solutions across
-                software stacks.
+            <p>I am a full stack software engineer with a passion for solving interesting problems
+                by designing and implementing software solutions across  software stacks.
             </p>
             <p>Age ... 24</p>
             <p>Residence ... Michigan</p>
-            <p>Email ... joshbbe@mail.com</p>
+            <p>Email ... {Email}</p>
         </Fragment>
     )
 }

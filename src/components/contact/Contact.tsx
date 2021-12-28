@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+import { Email } from '../../Constants'
 import { TabTitle } from '../tabs/TabTitle'
 
 interface Props {
@@ -18,9 +19,7 @@ export const Contact = (props: Props) => {
             </div>
             <div className='contactEntry'>
                 <img className='icon' src='at.png' alt='Email' />
-                <a href='joshbbe@mail.com' >
-                    <p>joshbbe@mail.com</p>
-                </a>
+                {Email}
             </div>
             
         </Fragment>
