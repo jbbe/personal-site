@@ -5,9 +5,7 @@ interface Props {
 }
 
 export const TabContainer = (props: Props) => {
-    return (
-        <div className='tab-container'>
+    return <div className='tab-container'>
             {props.children}
-        </div>
-    )
+        </div>;
 }

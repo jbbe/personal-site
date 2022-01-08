@@ -22,7 +22,7 @@ export const Typewriter = (props: Props) => {
         } else {
             setSpinTime(0);
             setCharIdx(0);
-            console.log(textIdx < texts.length - 1 ? textIdx + 1 : 0)
+            // console.log(textIdx < texts.length - 1 ? textIdx + 1 : 0)
             setTextIdx(textIdx < texts.length - 1 ? textIdx + 1 : 0)
         }
     }, interval)

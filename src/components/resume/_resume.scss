@@ -13,8 +13,10 @@
 }
 
 .resume-title {
-    display: grid;
-    grid-template-columns: auto 1fr;
+    // display: grid;
+    // grid-template-columns: auto 1fr;
+    display: flex;
+    flex-wrap: wrap;
     img {
         height: 3rem;
         padding-right: 5px;

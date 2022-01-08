@@ -6,19 +6,20 @@ import { ResumeEntry } from './ResumeEntry';
 const TechIcons = [
         { name: 'Typescript', icon: "typescript.png"},
         { name: 'React', icon: "react.png"},
-        { name: 'oCaml', icon: 'ocaml.jpg' },
+        { name: 'Rust', icon: "rust.png"},
+
 
         { name: 'node.js', icon: "nodejs.png"}, 
         { name: 'C#', icon: "csharp.jpg"}, 
         { name: 'Azure DevOps', icon: "azure.png"}, 
 
         { name: '', icon: ''},
+        // { name: 'oCaml', icon: 'ocaml.jpg' },
         { name: 'three.js', icon: "threejs.jpg"}, 
     ];
 
 export const Resume = () => {
-    return (
-        <Fragment>
+    return  <>
             {/* <TabTitle title="Resumé" /> */}
             <div className='resume-title'>
                 {/* <img src={'skills.svg'} alt='' /> */}
@@ -50,10 +51,12 @@ export const Resume = () => {
                 location="Grand Haven, MI"
                 dates="June 2020 - Present"
                 bulletPoints={
-                    ["Developed an embeddable augmented reality model viewer for customer storefronts with Typescript and the WebXR API.",
-                "Implemented the front end of a CMS for 3D models including an editor using React with Typescript and some sections of the backend using Node.js and ASP.NET Core.",
-                "Reworked the front end of a React Electron app for managing neurometric data.",
-                "Set up and managed CI/CD for multiple projects using the Azure ecosystem."
+                    [`Developed a collection of tools for 3D experience editing and content management. Responsibilities
+                    involved developing web tools with Typescript, React, three.js and browser APIs, developing an
+                    API with C and ASP.NET Core, and building smaller node.js driven services for content processing..`,
+                    "Managed azure CI/CD deployment for multiple projects.",
+                    `Created multiple one off 3D experiences for the web some including AR elements using three.js,
+                    Blender and custom tools.`          
                 ]}
             />
             <ResumeEntry company={"University of Michigan, CAEN"} 
@@ -67,6 +70,5 @@ export const Resume = () => {
                         "Processed and analyzed system usage data with Python."
                 ]}
             />
-        </Fragment>
-    )
+        </>;
 }

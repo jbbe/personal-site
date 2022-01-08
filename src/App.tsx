@@ -7,6 +7,9 @@ import './app.scss';
 import { About } from './components/About';
 import { Resume } from './components/resume/Resume';
 import { Contact } from './components/contact/Contact';
+import SourceLink from './components/sourcelink/SourceLink';
+
+const TotalTabs = 3;
 
 function App() {
     const [tab, setTab] = useState<number>(0);
@@ -17,28 +20,43 @@ function App() {
         { title: 'Contact', icon: '/email.svg' },
     ];
 
-    return (
-        <div className="app-container">
+    const scrollPast = (currentTab: number, up: boolean) => {
+        if(!up && currentTab < TotalTabs -1) {
+            setTab(currentTab++)
+        }
+        if(up && currentTab > 0) {
+            setTab(currentTab--)
+        }
+    }
+
+    return  <div className="app-container">
             <div className='main-container'>
                 <TabBar tab={tab} setTab={setTab} tabContents={tabContents} />
                 <InfoContainer /> 
 
                 <TabContainer>
-                    <Tab value={tab} index={0}>
+                    <Tab value={tab} 
+                        index={0}
+                        overScrollHandler={(up: boolean) => scrollPast(0, up)}>
                         <About />
                     </Tab>
-                    <Tab value={tab} index={1}>
+                    <Tab 
+                        value={tab}
+                        index={1} 
+                        overScrollHandler={(up: boolean) => scrollPast(1, up)}>
                         <Resume />
                     </Tab>
-                    <Tab value={tab} index={2}>
+                    <Tab value={tab} 
+                        index={2} 
+                        overScrollHandler={(up: boolean) => scrollPast(2, up)}>
                         <Contact />
                     </Tab>
                 </TabContainer>
         
             </div>
             <Copyright />
-        </div>
-    );
+            <SourceLink />
+        </div>;
 }
 
 export default App;

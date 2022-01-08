@@ -9,7 +9,7 @@ export const InfoContainer = () => {
     return (
         <div className='info-container'>
             <div className='profile-pic-container'>
-                <img className='profile-pic' src='headshot.png' alt='' />
+                <img className='profile-pic' src='headshot_color.jpg' alt='' />
             </div>
 
             <Typewriter 
