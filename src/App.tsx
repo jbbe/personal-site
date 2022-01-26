@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import { Tab, TabBar, TabContainer } from './components/tabs';
 import { InfoContainer } from './components/infocontainer/InfoContainer';
 import { Copyright } from './components/Copyright';
-
-import './app.scss';
 import { About } from './components/About';
 import { Resume } from './components/resume/Resume';
 import { Contact } from './components/contact/Contact';
 import SourceLink from './components/sourcelink/SourceLink';
+
+import './app.scss';
 
 const TotalTabs = 3;
 
@@ -29,7 +29,7 @@ function App() {
         }
     }
 
-    return  <div className="app-container">
+    return <div className="app-container">
             <div className='main-container'>
                 <TabBar tab={tab} setTab={setTab} tabContents={tabContents} />
                 <InfoContainer /> 
