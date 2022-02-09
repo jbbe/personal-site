@@ -1,19 +1,15 @@
 {
   "selectedTemplate": 7,
   "headings": {
-    "education": "Education",
+    "education": "",
     "projects": "",
-    "awards": "",
-    "work": "Work Experience",
-    "skills": "Skills"
+    "awards": ""
   },
   "basics": {
     "name": "Joshua Bell",
     "email": "joshbel@protonmail.com",
-    "location": {
-      "address": "Grand Rapids, MI"
-    },
-    "website": "https://jbbe.github.io/"
+    "website": "https://jbbe.github.io/",
+    "phone": "(616) 287-3140"
   },
   "education": [
     {
@@ -24,34 +20,42 @@
       "endDate": "2020",
       "gpa": "3.27 / 4.0",
       "startDate": "2015"
+    },
+    {
+      "location": "Online",
+      "startDate": "2018",
+      "endDate": "2020",
+      "institution": "University of Michigan Coursera Courses",
+      "studyType": "Applied Data Science for Python, Machine Learning, & Text Mining"
     }
   ],
   "work": [
     {
-      "company": "University of Michigan, CAEN",
-      "location": "Ann Arbor, MI",
-      "position": "Help Desk Consultant & Student Manager",
-      "website": "",
-      "endDate": "April 2020",
-      "highlights": [
-        "Developed a desktop application for information gathering during issue reporting.",
-        "Provided help desk support by answering questions, escalating issues, managing accounts, testing software, and writing documentation.",
-        "Trained and managed student employees beginning in May 2019.",
-        "Processed and analyzed system usage data with Python."
-      ],
-      "startDate": "July 2018"
-    },
-    {
-      "highlights": [
-        "Developed a collection of tools for 3D experience editing and content management. Responsibilities involved developing web tools with Typescript, React, three.js and browser APIs, developing an API with C and ASP.NET Core, and building smaller node.js driven services for content processing.",
-        "Managed azure CI/CD deployment for multiple projects.",
-        "Created multiple one off 3D experiences for the web some including AR elements using three.js, Blender and custom tools."
-      ],
       "company": "Th3rdcoast Digital Solutions",
       "position": "Software Developer",
       "location": "Grand Haven, MI",
       "startDate": "June 2020",
-      "endDate": "Present"
+      "endDate": "Present",
+      "highlights": [
+        "Developed a collection of tools for 3D experience editing and content management. Responsibilities involved developing web tools with Typescript, React, three.js and browser APIs, developing an API with C# and ASP.NET Core, and building smaller node.js driven services for content processing",
+        "Managed azure CI/CD deployment for multiple projects.",
+        "Created one off 3D experiences for the web some including AR elements using three.js, Blender and custom tools",
+        "Trained and mentored new developers"
+      ]
+    },
+    {
+      "company": "University of Michigan, CAEN",
+      "location": "Ann Arbor, MI",
+      "position": "Help Desk Manager & Developer",
+      "website": "",
+      "startDate": "July 2018",
+      "endDate": "April 2020",
+      "highlights": [
+        "Developed a desktop application for information gathering during issue reporting",
+        "Provided help desk support by answering questions, escalating issues, managing accounts, testing software, and writing documentation",
+        "Trained and managed student employees",
+        "Processed and analyzed system usage data with Python"
+      ]
     }
   ],
   "skills": [
@@ -59,23 +63,50 @@
       "level": "",
       "keywords": [
         "Typescript",
-        "React",
+        "Javascript",
         "Rust",
         "C#",
         "Dotnet Ecosystem",
-        "three.js",
-        "Azure",
+        null,
+        null,
         "node.js",
         "OCaml",
         "C++",
-        "webpack",
-        "Python"
+        "Python",
+        "WASM",
+        "webgl",
+        "MsSQL"
+      ],
+      "name": "Languages"
+    },
+    {
+      "keywords": [
+        "React",
+        "Electron",
+        "Entity Framework Core",
+        "three.js"
+      ]
+    },
+    {
+      "keywords": [
+        "Git",
+        "Webpack",
+        "Docker",
+        "Azure",
+        "Lerna",
+        "Jest",
+        "Blender"
+      ],
+      "name": "Tools"
+    },
+    {
+      "keywords": [
+        ""
       ]
     }
   ],
   "projects": [
     {
-      "name": "",
       "description": "",
       "url": "",
       "keywords": [
